@@ -1,0 +1,12 @@
+before_script:
+  - hostname
+  - whoami
+
+build:
+  stage: build 
+  script:
+    - docker run --rm -i --name maven -v "$PWD":/usr/src/mymaven -w /usr/src/mymaven -v /home/gitlab-runner/.m2:/home/gitlab-runner/.m2:rw registry-vpc.cn-hangzhou.aliyuncs.com/qingguatang/build mvn clean install
+    - docker run --rm -i --name maven -v "$PWD":/usr/src/mymaven -w /usr/src/mymaven -v /home/gitlab-runner/.m2:/home/gitlab-runner/.m2:rw registry-vpc.cn-hangzhou.aliyuncs.com/qingguatang/build mvn deploy
+  only:
+     - master
+
