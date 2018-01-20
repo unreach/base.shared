@@ -3,8 +3,6 @@ package io.unreach.model;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
-import java.util.Objects;
-import org.springframework.validation.annotation.Validated;
 
 /**
  * 结果模型
@@ -95,6 +93,16 @@ public class Result<T> {
 
   public void setData(T data) {
     this.data = data;
+  }
+
+  /**
+   * 设置data数据
+   * @param data
+   * @return
+   */
+  public Result<T> data(T data) {
+    this.setData(data);
+    return this;
   }
 }
 
