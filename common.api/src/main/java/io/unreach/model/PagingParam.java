@@ -10,17 +10,18 @@ import io.swagger.annotations.ApiModelProperty;
  */
 public class PagingParam {
 
+  @ApiModelProperty(value = "一页大小")
+  protected Integer pageSize = 10;
 
-  private Integer pageSize = 10;
-
-  private Integer currentPage = 1;
+  @ApiModelProperty(value = "当前页数")
+  protected Integer currentPage = 1;
 
   /**
    * 一页大小
    *
    * @return pageSize
    **/
-  @ApiModelProperty(value = "一页大小")
+
   public Integer getPageSize() {
     return pageSize;
   }
@@ -34,7 +35,6 @@ public class PagingParam {
    *
    * @return currentPage
    **/
-  @ApiModelProperty(value = "当前页数")
   public Integer getCurrentPage() {
     return currentPage;
   }
