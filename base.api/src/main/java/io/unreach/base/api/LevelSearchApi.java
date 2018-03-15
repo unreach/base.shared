@@ -1,5 +1,6 @@
 package io.unreach.base.api;
 
+import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiOperation;
 import io.unreach.base.model.Level;
@@ -14,7 +15,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
  * @author joe
  * @date 2018/3/15
  */
-@ApiModel("等级查询服务")
+@Api(tags = "等级查询服务")
 public interface LevelSearchApi {
 
   /**

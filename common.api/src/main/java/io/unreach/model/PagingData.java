@@ -12,15 +12,15 @@ import java.util.List;
  */
 public class PagingData<T> {
 
-  private Integer totalItems = null;
+  protected Integer totalItems = null;
 
-  private Integer totalPages = null;
+  protected Integer totalPages = null;
 
-  private Integer pageSize = 10;
+  protected Integer pageSize = 10;
 
-  private Integer currentPage = 1;
+  protected Integer currentPage = 1;
 
-  private List<T> data = null;
+  protected List<T> data = null;
 
   /**
    * 总记录数

@@ -11,15 +11,15 @@ import io.swagger.annotations.ApiModelProperty;
 public class Result<T> {
 
   @JsonProperty("isSuccess")
-  private Boolean isSuccess = false;
+  protected Boolean isSuccess = false;
 
   @JsonProperty("code")
-  private String code = null;
+  protected String code = null;
 
   @JsonProperty("message")
-  private String message = null;
+  protected String message = null;
 
-  private T data = null;
+  protected T data = null;
 
   public Result isSuccess(Boolean isSuccess) {
     this.isSuccess = isSuccess;
