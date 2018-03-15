@@ -1,4 +1,4 @@
-package io.unreach.base.model;
+package io.unreach.model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import io.swagger.annotations.ApiModel;
