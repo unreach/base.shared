@@ -9,7 +9,6 @@
   <packaging>pom</packaging>
 
   <name>base.shared.all</name>
-  <description></description>
 
   <parent>
     <groupId>io.unreach</groupId>
