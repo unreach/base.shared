@@ -1,4 +1,4 @@
-package io.unreach.model;
+package io.unreach.base.model;
 
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;

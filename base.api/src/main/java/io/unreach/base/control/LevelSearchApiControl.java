@@ -1,7 +1,7 @@
-package io.unreach.control;
+package io.unreach.base.control;
 
-import io.unreach.api.LevelSearchApi;
-import io.unreach.model.Level;
+import io.unreach.base.api.LevelSearchApi;
+import io.unreach.base.model.Level;
 import java.util.List;
 import org.springframework.stereotype.Controller;
 

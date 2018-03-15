@@ -1,8 +1,8 @@
-package io.unreach.api;
+package io.unreach.base.api;
 
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiOperation;
-import io.unreach.model.Level;
+import io.unreach.base.model.Level;
 import java.util.List;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;

@@ -1,8 +1,6 @@
-package io.unreach.model;
+package io.unreach.base.model;
 
 import io.swagger.annotations.ApiModelProperty;
-import java.util.ArrayList;
-import java.util.List;
 
 /**
  * 分页请求模型
