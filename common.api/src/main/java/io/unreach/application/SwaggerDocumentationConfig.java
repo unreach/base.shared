@@ -22,11 +22,13 @@ public class SwaggerDocumentationConfig {
 
   @Bean
   public Docket customImplementation() {
-    return new Docket(DocumentationType.SWAGGER_2)
+
+    Docket docket = new Docket(DocumentationType.SWAGGER_2)
         .select()
         .apis(RequestHandlerSelectors.withMethodAnnotation(ApiOperation.class))
         .build()
         .apiInfo(apiInfo());
+    return docket;
   }
 
 
