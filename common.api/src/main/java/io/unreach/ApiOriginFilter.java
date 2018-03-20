@@ -25,10 +25,15 @@ public class ApiOriginFilter implements javax.servlet.Filter {
       return;
     }
 
-    res.addHeader("Access-Control-Allow-Origin", "*");
+    String origin = req.getHeader("Origin");
+    if(origin==null){
+      origin = "*";
+    }
+
+    res.addHeader("Access-Control-Allow-Origin", origin);
     res.addHeader("Access-Control-Allow-Methods", "GET, POST, DELETE, PUT");
     res.addHeader("Access-Control-Allow-Headers", "*");
-    res.addHeader("Access-Control-Allow-Credentials", "true");
+   // res.addHeader("Access-Control-Allow-Credentials", "true");
 
     chain.doFilter(request, response);
   }
