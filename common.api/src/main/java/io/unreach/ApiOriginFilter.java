@@ -6,22 +6,25 @@ import javax.servlet.FilterConfig;
 import javax.servlet.ServletException;
 import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
-import javax.servlet.annotation.WebFilter;
+import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import org.springframework.core.Ordered;
-import org.springframework.core.annotation.Order;
+import org.apache.commons.lang3.StringUtils;
 
 /**
- * cros 处理
+ * cors 处理
  */
-@WebFilter(filterName = "SessionFilter", urlPatterns = {"/*"})
-@Order(Ordered.HIGHEST_PRECEDENCE)
 public class ApiOriginFilter implements javax.servlet.Filter {
 
   @Override
   public void doFilter(ServletRequest request, ServletResponse response,
       FilterChain chain) throws IOException, ServletException {
+    HttpServletRequest req = (HttpServletRequest) request;
     HttpServletResponse res = (HttpServletResponse) response;
+
+    if(StringUtils.endsWith(req.getPathInfo(),"favicon.ico")){
+      return;
+    }
+
     res.addHeader("Access-Control-Allow-Origin", "*");
     res.addHeader("Access-Control-Allow-Methods", "GET, POST, DELETE, PUT");
     res.addHeader("Access-Control-Allow-Headers", "Content-Type");

@@ -9,15 +9,12 @@ import javax.servlet.FilterConfig;
 import javax.servlet.ServletException;
 import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
-import javax.servlet.annotation.WebFilter;
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.core.Ordered;
-import org.springframework.core.annotation.Order;
 
 /**
  * 处理用户解析逻辑
@@ -25,8 +22,6 @@ import org.springframework.core.annotation.Order;
  * @author joe
  * @date 2018/2/23
  */
-@WebFilter(filterName = "SessionFilter", urlPatterns = {"/*"})
-@Order(Ordered.HIGHEST_PRECEDENCE+1)
 public class SessionFilter implements Filter {
 
   private static final Logger logger = LoggerFactory.getLogger(SessionFilter.class);
