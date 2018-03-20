@@ -21,6 +21,7 @@
   <modules>
     <module>./common.api</module>
     <module>./base.api</module>
+    <module>./base.service</module>
   </modules>
 
   <dependencies>
