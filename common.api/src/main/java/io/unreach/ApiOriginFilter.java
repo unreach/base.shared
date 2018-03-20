@@ -21,19 +21,19 @@ public class ApiOriginFilter implements javax.servlet.Filter {
     HttpServletRequest req = (HttpServletRequest) request;
     HttpServletResponse res = (HttpServletResponse) response;
 
-    if(StringUtils.endsWith(req.getPathInfo(),"favicon.ico")){
+    if (StringUtils.endsWith(req.getPathInfo(), "favicon.ico")) {
       return;
     }
 
     String origin = req.getHeader("Origin");
-    if(origin==null){
+    if (origin == null) {
       origin = "*";
     }
 
     res.addHeader("Access-Control-Allow-Origin", origin);
     res.addHeader("Access-Control-Allow-Methods", "GET, POST, DELETE, PUT");
     res.addHeader("Access-Control-Allow-Headers", "*");
-   // res.addHeader("Access-Control-Allow-Credentials", "true");
+    res.addHeader("Access-Control-Allow-Credentials", "true");
 
     chain.doFilter(request, response);
   }
