@@ -26,7 +26,7 @@ import org.springframework.core.annotation.Order;
  * @date 2018/2/23
  */
 @WebFilter(filterName = "SessionFilter", urlPatterns = {"/*"})
-@Order(Ordered.HIGHEST_PRECEDENCE)
+@Order(Ordered.HIGHEST_PRECEDENCE+1)
 public class SessionFilter implements Filter {
 
   private static final Logger logger = LoggerFactory.getLogger(SessionFilter.class);

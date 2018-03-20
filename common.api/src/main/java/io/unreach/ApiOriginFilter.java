@@ -6,9 +6,16 @@ import javax.servlet.FilterConfig;
 import javax.servlet.ServletException;
 import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
+import javax.servlet.annotation.WebFilter;
 import javax.servlet.http.HttpServletResponse;
+import org.springframework.core.Ordered;
+import org.springframework.core.annotation.Order;
 
-
+/**
+ * cros 处理
+ */
+@WebFilter(filterName = "SessionFilter", urlPatterns = {"/*"})
+@Order(Ordered.HIGHEST_PRECEDENCE)
 public class ApiOriginFilter implements javax.servlet.Filter {
 
   @Override
