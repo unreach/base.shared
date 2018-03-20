@@ -2,6 +2,7 @@ package io.unreach;
 
 import io.unreach.util.JWTUtils;
 import io.unreach.util.SessionUtil;
+import java.io.IOException;
 import javax.servlet.Filter;
 import javax.servlet.FilterChain;
 import javax.servlet.FilterConfig;
@@ -39,7 +40,8 @@ public class SessionFilter implements Filter {
   }
 
   @Override
-  public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) {
+  public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain)
+      throws IOException, ServletException {
     HttpServletRequest req = (HttpServletRequest) request;
     HttpServletResponse res = (HttpServletResponse) response;
     String token = null;
@@ -61,6 +63,8 @@ public class SessionFilter implements Filter {
       } finally {
         SessionUtil.clear();
       }
+    } else {
+      chain.doFilter(request, response);
     }
   }
 
