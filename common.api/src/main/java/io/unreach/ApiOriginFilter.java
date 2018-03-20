@@ -28,6 +28,8 @@ public class ApiOriginFilter implements javax.servlet.Filter {
     res.addHeader("Access-Control-Allow-Origin", "*");
     res.addHeader("Access-Control-Allow-Methods", "GET, POST, DELETE, PUT");
     res.addHeader("Access-Control-Allow-Headers", "*");
+    res.addHeader("Access-Control-Allow-Credentials", "true");
+
     chain.doFilter(request, response);
   }
 
