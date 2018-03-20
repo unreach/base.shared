@@ -2,7 +2,6 @@ package io.unreach;
 
 import io.unreach.util.JWTUtils;
 import io.unreach.util.SessionUtil;
-import java.io.IOException;
 import javax.servlet.Filter;
 import javax.servlet.FilterChain;
 import javax.servlet.FilterConfig;
@@ -21,6 +20,7 @@ import org.springframework.core.annotation.Order;
 
 /**
  * 处理用户解析逻辑
+ *
  * @author joe
  * @date 2018/2/23
  */
