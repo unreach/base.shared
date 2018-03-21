@@ -1,5 +1,7 @@
 package io.unreach.interview;
 
+import static org.assertj.core.api.Assertions.assertThat;
+
 import io.unreach.base.model.Level;
 import io.unreach.level.helper.LevelDefineFactory;
 import java.util.List;
@@ -23,7 +25,7 @@ public class LevelDefineTest {
   @Test
   public void testDefines(){
     List<Level> result = factory.getLevelDefineModelList();
-    System.out.println("123123");
+    assertThat(result.size() > 0);
   }
 
 }
