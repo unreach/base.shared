@@ -1,8 +1,7 @@
-package io.unreach.interview.process;
+package io.unreach.level.helper;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import io.unreach.base.model.Level;
-import io.unreach.interview.model.InterviewProcess;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -11,12 +10,13 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
 /**
  * @author zhoufan
  * @date 2018/3/19 进度定义工厂
  */
-@Component
+@Service
 @ConfigurationProperties(prefix = "process")
 public class LevelDefineFactory {
 

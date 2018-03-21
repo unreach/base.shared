@@ -5,6 +5,7 @@ import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiOperation;
 import io.unreach.Constants;
 import io.unreach.base.model.Level;
+import io.unreach.model.Result;
 import java.util.List;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -26,6 +27,6 @@ public interface LevelSearchApi {
   @RequestMapping(value = "/api/levelsearch", method = RequestMethod.GET, produces = {
       "application/json"})
   @ResponseBody
-  public List<Level> search();
+  public Result<List<Level>> search();
 
 }

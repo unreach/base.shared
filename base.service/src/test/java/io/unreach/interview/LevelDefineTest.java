@@ -3,7 +3,7 @@ package io.unreach.interview;
 import static org.assertj.core.api.Assertions.assertThat;
 
 import com.google.gson.Gson;
-import io.unreach.interview.process.LevelDefineFactory;
+import io.unreach.level.helper.LevelDefineFactory;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
