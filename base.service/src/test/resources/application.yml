@@ -1,0 +1,152 @@
+process:
+  processList:
+    - id: 1
+      name: 个人亮点
+      desc: 个人亮点
+      degree: 1
+      career: java
+    - id: 2
+      name: 个人亮点
+      desc: 个人亮点
+      degree: 2
+      career: java
+    - id: 3
+      name: 个人亮点
+      desc: 个人亮点
+      degree: 3
+      career: java
+    - id: 4
+      name: 个人亮点
+      desc: 个人亮点
+      degree: 4
+      career: java
+    - id: 5
+      name: 个人亮点
+      desc: 个人亮点
+      degree: 5
+      career: java
+    - id: 6
+      name: 个人亮点
+      desc: 个人亮点
+      degree: 6
+      career: java
+    - id: 7
+      name: 个人亮点
+      desc: 个人亮点
+      degree: 7
+      career: java
+    - id: 8
+      name: 个人亮点
+      desc: 个人亮点
+      degree: 8
+      career: java
+    - id: 9
+      name: 个人亮点
+      desc: 个人亮点
+      degree: 9
+      career: java
+    - id: 10
+      name: 个人亮点
+      desc: 个人亮点
+      degree: 10
+      career: java
+    - id: 11
+      name: 专业技能
+      desc: 专业技能
+      degree: 1
+      career: 前端
+    - id: 12
+      name: 专业技能
+      desc: 专业技能
+      degree: 2
+      career: 前端
+    - id: 13
+      name: 专业技能
+      desc: 专业技能
+      degree: 3
+      career: 前端
+    - id: 14
+      name: 专业技能
+      desc: 专业技能
+      degree: 4
+      career: 前端
+    - id: 15
+      name: 专业技能
+      desc: 专业技能
+      degree: 5
+      career: 前端
+    - id: 16
+      name: 专业技能
+      desc: 专业技能
+      degree: 6
+      career: 前端
+    - id: 17
+      name: 专业技能
+      desc: 专业技能
+      degree: 7
+      career: 前端
+    - id: 18
+      name: 专业技能
+      desc: 专业技能
+      degree: 8
+      career: 前端
+    - id: 19
+      name: 专业技能
+      desc: 专业技能
+      degree: 9
+      career: 前端
+    - id: 20
+      name: 专业技能
+      desc: 专业技能
+      degree: 10
+      career: 前端
+    - id: 21
+      name: 综合能力
+      desc: 综合能力
+      degree: 1
+      career: 全栈
+    - id: 22
+      name: 综合能力
+      desc: 综合能力
+      degree: 2
+      career: 全栈
+    - id: 23
+      name: 综合能力
+      desc: 综合能力
+      degree: 3
+      career: 全栈
+    - id: 24
+      name: 综合能力
+      desc: 综合能力
+      degree: 4
+      career: 全栈
+    - id: 25
+      name: 综合能力
+      desc: 综合能力
+      degree: 5
+      career: 全栈
+    - id: 26
+      name: 综合能力
+      desc: 综合能力
+      degree: 6
+      career: 全栈
+    - id: 27
+      name: 综合能力
+      desc: 综合能力
+      degree: 7
+      career: 全栈
+    - id: 28
+      name: 综合能力
+      desc: 综合能力
+      degree: 8
+      career: 全栈
+    - id: 29
+      name: 综合能力
+      desc: 综合能力
+      degree: 9
+      career: 全栈
+    - id: 30
+      name: 综合能力
+      desc: 综合能力
+      degree: 10
+      career: 全栈
