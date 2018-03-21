@@ -8,7 +8,7 @@ import org.springframework.context.annotation.ComponentScan;
  * @date 2018/3/19
  */
 @SpringBootApplication
-@ComponentScan({"io.unreach.process.engine.*", "io.unreach.interview.*"})
+@ComponentScan({"io.unreach.*.control", "io.unreach.*.helper"})
 public class TestApplication {
 
 }

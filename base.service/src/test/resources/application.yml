@@ -1,152 +1,152 @@
-process:
-  processList:
+level:
+  levelList:
     - id: 1
-      name: 个人亮点
-      desc: 个人亮点
+      name: Lv1
+      desc:
       degree: 1
-      career: java
+      career: be
     - id: 2
-      name: 个人亮点
-      desc: 个人亮点
+      name: Lv2
+      desc:
       degree: 2
-      career: java
+      career: be
     - id: 3
-      name: 个人亮点
-      desc: 个人亮点
+      name: Lv3
+      desc:
       degree: 3
-      career: java
+      career: be
     - id: 4
-      name: 个人亮点
-      desc: 个人亮点
+      name: Lv4
+      desc:
       degree: 4
-      career: java
+      career: be
     - id: 5
-      name: 个人亮点
-      desc: 个人亮点
+      name: Lv5
+      desc:
       degree: 5
-      career: java
+      career: be
     - id: 6
-      name: 个人亮点
-      desc: 个人亮点
+      name: Lv6
+      desc:
       degree: 6
-      career: java
+      career: be
     - id: 7
-      name: 个人亮点
-      desc: 个人亮点
+      name: Lv7
+      desc:
       degree: 7
-      career: java
+      career: be
     - id: 8
-      name: 个人亮点
-      desc: 个人亮点
+      name: Lv8
+      desc:
       degree: 8
-      career: java
+      career: be
     - id: 9
-      name: 个人亮点
-      desc: 个人亮点
+      name: Lv9
+      desc:
       degree: 9
-      career: java
+      career: be
     - id: 10
-      name: 个人亮点
-      desc: 个人亮点
+      name: Lv10
+      desc:
       degree: 10
-      career: java
+      career: be
     - id: 11
-      name: 专业技能
-      desc: 专业技能
+      name: Lv1
+      desc:
       degree: 1
-      career: 前端
+      career: fe
     - id: 12
-      name: 专业技能
-      desc: 专业技能
+      name: Lv2
+      desc:
       degree: 2
-      career: 前端
+      career: fe
     - id: 13
-      name: 专业技能
-      desc: 专业技能
+      name: Lv3
+      desc:
       degree: 3
-      career: 前端
+      career: fe
     - id: 14
-      name: 专业技能
-      desc: 专业技能
+      name: Lv4
+      desc:
       degree: 4
-      career: 前端
+      career: fe
     - id: 15
-      name: 专业技能
-      desc: 专业技能
+      name: Lv5
+      desc:
       degree: 5
-      career: 前端
+      career: fe
     - id: 16
-      name: 专业技能
-      desc: 专业技能
+      name: Lv6
+      desc:
       degree: 6
-      career: 前端
+      career: fe
     - id: 17
-      name: 专业技能
-      desc: 专业技能
+      name: Lv7
+      desc:
       degree: 7
-      career: 前端
+      career: fe
     - id: 18
-      name: 专业技能
-      desc: 专业技能
+      name: Lv8
+      desc:
       degree: 8
-      career: 前端
+      career: fe
     - id: 19
-      name: 专业技能
-      desc: 专业技能
+      name: Lv9
+      desc:
       degree: 9
-      career: 前端
+      career: fe
     - id: 20
-      name: 专业技能
-      desc: 专业技能
+      name: Lv10
+      desc:
       degree: 10
-      career: 前端
+      career: fe
     - id: 21
-      name: 综合能力
-      desc: 综合能力
+      name: Lv1
+      desc:
       degree: 1
-      career: 全栈
+      career: wl
     - id: 22
-      name: 综合能力
-      desc: 综合能力
+      name: Lv2
+      desc:
       degree: 2
-      career: 全栈
+      career: wl
     - id: 23
-      name: 综合能力
-      desc: 综合能力
+      name: Lv3
+      desc:
       degree: 3
-      career: 全栈
+      career: wl
     - id: 24
-      name: 综合能力
-      desc: 综合能力
+      name: Lv4
+      desc:
       degree: 4
-      career: 全栈
+      career: wl
     - id: 25
-      name: 综合能力
-      desc: 综合能力
+      name: Lv5
+      desc:
       degree: 5
-      career: 全栈
+      career: wl
     - id: 26
-      name: 综合能力
-      desc: 综合能力
+      name: Lv6
+      desc:
       degree: 6
-      career: 全栈
+      career: wl
     - id: 27
-      name: 综合能力
-      desc: 综合能力
+      name: Lv7
+      desc:
       degree: 7
-      career: 全栈
+      career: wl
     - id: 28
-      name: 综合能力
-      desc: 综合能力
+      name: Lv8
+      desc:
       degree: 8
-      career: 全栈
+      career: wl
     - id: 29
-      name: 综合能力
-      desc: 综合能力
+      name: Lv9
+      desc:
       degree: 9
-      career: 全栈
+      career: wl
     - id: 30
-      name: 综合能力
-      desc: 综合能力
+      name: Lv10
+      desc:
       degree: 10
-      career: 全栈
+      career: wl

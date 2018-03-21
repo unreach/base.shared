@@ -1,9 +1,8 @@
 package io.unreach.interview;
 
-import static org.assertj.core.api.Assertions.assertThat;
-
-import com.google.gson.Gson;
+import io.unreach.base.model.Level;
 import io.unreach.level.helper.LevelDefineFactory;
+import java.util.List;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,12 +18,12 @@ import org.springframework.test.context.web.WebAppConfiguration;
 @SpringBootTest(classes = TestApplication.class)
 @WebAppConfiguration
 public class LevelDefineTest {
-    Gson gson = new Gson();
   @Autowired LevelDefineFactory factory;
 
   @Test
   public void testDefines(){
-    System.out.println(gson.toJson(factory.getProcessList()));
+    List<Level> result = factory.getLevelDefineModelList();
+    System.out.println("123123");
   }
 
 }
