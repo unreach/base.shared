@@ -25,5 +25,4 @@ public class LevelSearchApiControl implements LevelSearchApi{
     listResult.setData(levelDefineFactory.getLevelDefineModelList());
     return listResult;
   }
-
 }
