@@ -9,7 +9,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.context.properties.ConfigurationProperties;
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 /**
@@ -17,7 +16,7 @@ import org.springframework.stereotype.Service;
  * @date 2018/3/19 进度定义工厂
  */
 @Service
-@ConfigurationProperties(prefix = "process")
+@ConfigurationProperties(prefix = "level")
 public class LevelDefineFactory {
 
   private static final Logger logger = LoggerFactory
@@ -30,24 +29,24 @@ public class LevelDefineFactory {
 
   private List<Level> interviewLevelList;
 
-  public List<Map<String, String>> getProcessList() {
+  public List<Map<String, String>> getLevelList() {
     return levelList;
   }
 
-  public void setProcessList(List<Map<String, String>> processList) {
-    this.levelList = processList;
+  public void setLevelList(List<Map<String, String>> levelList) {
+    this.levelList = levelList;
   }
 
   /**
-   * 获取所有InterviewProcess定义模型
+   * 获取所有Level定义模型
    *
-   * @return InterviewProcess定义数组
+   * @return level定义数组
    */
   public List<Level> getLevelDefineModelList() {
     if (null == this.interviewLevelList) {
       this.interviewLevelList = new ArrayList<>();
-      for (Map<String, String> process : this.levelList) {
-        Level level = mapper.convertValue(process, Level.class);
+      for (Map<String, String> levelmap : this.levelList) {
+        Level level = mapper.convertValue(levelmap, Level.class);
         this.interviewLevelList.add(level);
       }
     }
@@ -61,13 +60,13 @@ public class LevelDefineFactory {
    * @return 进度Id
    */
   public Level getLevel(String id) {
-    List<Level> processList = this.interviewLevelList;
-    for (Level level : processList) {
+    List<Level> levelList = this.getLevelDefineModelList();
+    for (Level level : levelList) {
       if (level.getId().equals(id)) {
         return level;
       }
     }
-    logger.error("cannot find process id with action: " + processList);
+    logger.error("cannot find level with level id: " + id);
     return null;
   }
 }
