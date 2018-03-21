@@ -12,6 +12,7 @@ import org.springframework.stereotype.Service;
 
 	@Override public Result<Level> getLevelById(String levelId) {
 		Result<Level> result = new Result<>();
+		result.setIsSuccess(true);
 		Level level = levelDefineFactory.getLevel(levelId);
 		result.setData(level);
 		return result;

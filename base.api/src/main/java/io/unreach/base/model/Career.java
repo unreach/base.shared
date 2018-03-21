@@ -29,4 +29,7 @@ public enum Career {
     return null;
   }
 
+  public String getName() {
+    return this.name;
+  }
 }
